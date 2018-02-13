@@ -1,4 +1,5 @@
 {
+  "extends": "standard",
   "ecmaFeatures": {
     "jsx": true,
     "modules": true
@@ -9,6 +10,7 @@
   },
   "parser": "babel-eslint",
   "rules": {
+    "semi": [2, "always"],
     "quotes": [2, "single"],
     "strict": [2, "never"],
     "react/jsx-uses-react": 2,

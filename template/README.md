@@ -1,3 +1,9 @@
-# react-template-create-app
+# Project-name
 
-The aim of this project is create a simple boilerplate for React app.
+Description of your project
+
+## Run
+
+```sh
+yarn && yarn start
+```

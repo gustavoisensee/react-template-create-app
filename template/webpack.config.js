@@ -16,10 +16,10 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loaders: ['react-hot', 'babel'],
+        loader: 'babel-loader',
         include: path.join(__dirname, 'src')
       },
       {

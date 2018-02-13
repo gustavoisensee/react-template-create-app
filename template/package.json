@@ -1,6 +1,6 @@
 {
-  "name": "react-template-create-app",
-  "version": "1.0.1",
+  "name": "project-name",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "node server.js",
@@ -8,45 +8,35 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gustavoisensee/react-template-create-app.git"
+    "url": "https://github.com/username/project-name.git"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack"
-  ],
-  "author": "Gustavo Isensee <gustavo.isensee@gmail.com> (http://github.com/gustavoisensee)",
+  "keywords": [],
+  "author": "Author-name <mail@mail.com> (http://github.com/username)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gustavoisensee/react-template-create-app/issues"
+    "url": "https://github.com/username/project-name/issues"
   },
-  "homepage": "https://github.com/gustavoisensee/react-template-create-app",
+  "homepage": "https://github.com/username/project-name",
   "devDependencies": {
-    "babel-core": "^6.0.20",
-    "babel-eslint": "^4.1.3",
-    "babel-loader": "^6.0.1",
-    "babel-preset-es2015": "^6.0.15",
-    "babel-preset-react": "^6.0.15",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.9",
-    "eslint": "^1.10.3",
-    "eslint-plugin-react": "^3.6.2",
-    "express": "^4.13.4",
+    "eslint": "^4.17.0",
+    "eslint-plugin-react": "^7.6.1",
+    "express": "^4.16.2",
     "node-sass": "^4.7.2",
-    "react-hot-loader": "^1.3.0",
+    "react-hot-loader": "^3.1.3",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.1",
-    "webpack": "^1.12.2",
-    "webpack-dev-middleware": "^1.6.1",
-    "webpack-hot-middleware": "^2.10.0"
+    "webpack": "^3.11.0",
+    "webpack-dev-middleware": "^2.0.5",
+    "webpack-hot-middleware": "^2.21.0"
   },
   "dependencies": {
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
