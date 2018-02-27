@@ -7,7 +7,7 @@ module.exports = {
   output: {
     filename: 'static/bundle.js',
     path: path.resolve(__dirname, '../dist'),
-    publicPath: '/'
+    publicPath: '/',
   },
 
   devtool: 'source-map',
@@ -17,27 +17,27 @@ module.exports = {
       {
         test: /\.js?$/,
         use: [
-          'babel-loader'
+          'babel-loader',
         ],
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.scss$/,
         use: [{
-          loader: 'style-loader' // creates style nodes from JS strings
+          loader: 'style-loader', // creates style nodes from JS strings
         }, {
-          loader: 'css-loader' // translates CSS into CommonJS
+          loader: 'css-loader', // translates CSS into CommonJS
         }, {
-          loader: 'sass-loader' // compiles Sass to CSS
-        }]
-      }
-    ]
+          loader: 'sass-loader', // compiles Sass to CSS
+        }],
+      },
+    ],
   },
 
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
-      comments: false
-    })
-  ]
+      comments: false,
+    }),
+  ],
 };

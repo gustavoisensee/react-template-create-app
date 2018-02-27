@@ -1,9 +1,28 @@
-# Project-name
+# project-name
 
 Description of your project
 
-## Run
+## run dev
 
 ```sh
 yarn && yarn start
+```
+
+## eslint
+
+```sh
+yarn lint
+```
+
+## build
+
+```sh
+yarn build
+```
+
+
+## build and run production
+
+```sh
+yarn prod:run
 ```

@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+
 const port = 3000;
 
 module.exports = {
@@ -15,7 +16,7 @@ module.exports = {
     // bundle the client for hot reloading
     // only- means to only hot reload for successful updates
 
-    './src/index.js'
+    './src/index.js',
     // the entry point of our app
   ],
 
@@ -25,7 +26,7 @@ module.exports = {
 
     path: path.resolve(__dirname, 'dist'),
 
-    publicPath: '/static/'
+    publicPath: '/static/',
     // necessary for HMR to know where to load the hot update chunks
   },
 
@@ -36,21 +37,21 @@ module.exports = {
       {
         test: /\.js?$/,
         use: [
-          'babel-loader'
+          'babel-loader',
         ],
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.scss$/,
         use: [{
-          loader: 'style-loader' // creates style nodes from JS strings
+          loader: 'style-loader', // creates style nodes from JS strings
         }, {
-          loader: 'css-loader' // translates CSS into CommonJS
+          loader: 'css-loader', // translates CSS into CommonJS
         }, {
-          loader: 'sass-loader' // compiles Sass to CSS
-        }]
-      }
-    ]
+          loader: 'sass-loader', // compiles Sass to CSS
+        }],
+      },
+    ],
   },
 
   plugins: [
@@ -60,7 +61,7 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     // prints more readable module names in the browser console on HMR updates
 
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin(),
     // do not emit compiled assets that include errors
   ],
 
@@ -71,7 +72,7 @@ module.exports = {
     historyApiFallback: true,
     // respond to 404s with index.html
 
-    hot: true
+    hot: true,
     // enable HMR on the server
-  }
+  },
 };

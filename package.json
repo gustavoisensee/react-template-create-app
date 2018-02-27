@@ -7,8 +7,7 @@
   "description": "",
   "scripts": {
     "react-template-create-app": "node index.js",
-    "start": "node index.js",
-    "lint": "eslint index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -23,15 +22,7 @@
     "url": "https://github.com/gustavoisensee/react-template-create-app/issues"
   },
   "homepage": "https://github.com/gustavoisensee/react-template-create-app",
-  "devDependencies": {
-    "eslint": "^4.17.0",
-    "eslint-config-standard": "^11.0.0-beta.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^6.0.0",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-react": "^7.6.1",
-    "eslint-plugin-standard": "^3.0.1"
-  },
+  "devDependencies": {},
   "dependencies": {
     "inquirer": "^5.1.0"
   }
