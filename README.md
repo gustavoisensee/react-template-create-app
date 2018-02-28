@@ -9,13 +9,22 @@ It is a simple template generator for react apps with some awesome technologies 
 * Node & Express
 
 
-## Install & Run
+## install
 
 ```sh
 npm install -g react-template-create-app
+```
 
-react-template-create-app (This is going to ask you the name of the project)
+## create project
 
+```sh
+// This is going to ask you the name of the project
+react-template-create-app
+```
+
+## run
+
+```sh
 cd project-name
 
 yarn && yarn start
