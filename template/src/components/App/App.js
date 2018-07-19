@@ -1,7 +1,22 @@
-import React, { PureComponent } from 'react';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import consStatus from '../../constants/status';
 import './app.scss';
+
+const PageOne = () => (
+  <div>Page 1</div>
+);
+
+const PageTwo = () => (
+  <div>Page 2</div>
+);
+
+const Routes = {
+  PAGE_ONE: '/',
+  PAGE_TWO: '/page-two',
+};
 
 class App extends PureComponent {
   componentWillMount() {
@@ -17,10 +32,31 @@ class App extends PureComponent {
     const isLoading = status === consStatus.INITIALIZE;
     const isLoaded = status === consStatus.LOADED;
     return (
-      <div>
-        {isLoading && <span>Loading ...</span>}
-        {isLoaded && <h1>Hello, world.</h1>}
-      </div>
+      <Router>
+        <Fragment>
+          {isLoading && <span>Loading ...</span>}
+          {isLoaded &&
+            <Fragment>
+              <div>
+                <ul>
+                  <li>
+                    <Link to={Routes.PAGE_ONE}>Page One</Link>
+                  </li>
+                  <li>
+                    <Link to={Routes.PAGE_TWO}>Page Two</Link>
+                  </li>
+                </ul>
+              </div>
+              <hr />
+              <div>
+                <h1>Hello, world.</h1>
+                <Route exact path={Routes.PAGE_ONE} component={PageOne} />
+                <Route path={Routes.PAGE_TWO} component={PageTwo} />
+              </div>
+            </Fragment>
+          }
+        </Fragment>
+      </Router>
     );
   }
 }
