@@ -1,27 +1,27 @@
 {
   "bin": {
-    "react-template-create-app": "./index.js"
+    "create-react-app": "./index.js"
   },
-  "name": "react-template-create-app",
+  "name": "@gustavoisensee/create-react-app",
   "version": "1.0.8",
   "description": "",
   "scripts": {
-    "react-template-create-app": "node index.js",
+    "create-react-app": "node index.js",
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gustavoisensee/react-template-create-app.git"
+    "url": "https://github.com/gustavoisensee/create-react-app.git"
   },
   "keywords": [
-    "react-template-create-app"
+    "create-react-app"
   ],
   "author": "Gustavo Isensee <gustavo.isensee@gmail.com> (http://github.com/gustavoisensee)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gustavoisensee/react-template-create-app/issues"
+    "url": "https://github.com/gustavoisensee/create-react-app/issues"
   },
-  "homepage": "https://github.com/gustavoisensee/react-template-create-app",
+  "homepage": "https://github.com/gustavoisensee/create-react-app",
   "devDependencies": {},
   "dependencies": {
     "inquirer": "^5.1.0"
