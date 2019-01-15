@@ -12,14 +12,14 @@ It is a simple template generator for react apps with some awesome technologies 
 ## install
 
 ```sh
-npm install -g react-template-create-app
+npm i -g @gustavoisensee/create-react-app
 ```
 
 ## create project
 
 ```sh
 // This is going to ask you the name of the project
-react-template-create-app
+create-react-app
 ```
 
 ## run

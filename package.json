@@ -3,7 +3,7 @@
     "create-react-app": "./index.js"
   },
   "name": "@gustavoisensee/create-react-app",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "scripts": {
     "create-react-app": "node index.js",
