@@ -3,7 +3,7 @@
     "react-template-create-app": "./index.js"
   },
   "name": "react-template-create-app",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "scripts": {
     "react-template-create-app": "node index.js",
