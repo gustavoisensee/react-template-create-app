@@ -1,7 +1,6 @@
 # React template create app
 
 It is a simple template generator for react apps with some awesome technologies like:
-* React
 * Webpack
 * Babel
 * Sass
